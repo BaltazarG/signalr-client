@@ -11,7 +11,7 @@ const Chat = () => {
 
     latestChat.current = chat;
 
-    useEffect(() => {s
+    useEffect(() => {
         const newConnection = new HubConnectionBuilder()
             .withUrl('https://localhost:7281/hubs/notifications')
             .withAutomaticReconnect()
